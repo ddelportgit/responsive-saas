@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar section */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 4rem;
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hero section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 4rem;
+}
+
+.headline {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  line-height: 100%;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+
+.ctaButtons button {
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  background: none;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Product Preview Secton */
+
+.productPreview {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.previewSidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #f8f7fc;
+  padding: 1.5rem;
+}
+
+.previewSidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.previewSidebar nav p {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.previewMain {
+  padding: 1.5rem;
+  min-width: 0;
+}
+
+.previewHeader {
+  margin: 1rem 0;
+}
+
+.previewStats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.statisticCard {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.previewTasks {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.previewTasks h3 {
+  margin: 1rem 0;
+}
+
+.task {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+/* Features section */
+
+.features {
+  margin: 4rem 4rem;
+}
+
+.features h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.featureCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.featureCard {
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* How it Works section */
+
+.howItWorks {
+  margin: 2rem 4rem;
+}
+
+.howItWorks h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 4rem 0;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+/* Pricing section */
+
+.pricing {
+  margin: 2rem 4rem;
+}
+
+.pricing h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.pricingCards {
+  display: flex;
+  gap: 2rem;
+}
+
+.pricingCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.price {
+  margin-bottom: 1rem;
+}
+
+.price h1 {
+  font-size: 3rem;
+}
+
+.price span {
+  font-size: 1.5rem;
+}
+
+.pricingCard button {
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* Final CTA */
+
+.ctaCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 2rem 4rem;
+  padding: 4rem;
+}
+
+.ctaCard h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.ctaCard p {
+  text-align: center;
+}
+
+.ctaCard button {
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  background: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 2rem 4rem;
+}
+
+.footer .logo {
+  font-size: 2rem;
+}
+
+.footer nav {
+  justify-content: space-between;
+}
