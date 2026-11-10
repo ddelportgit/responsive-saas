@@ -100,7 +100,6 @@ Then visit `http://localhost:8000`.
   the three bars are `aria-hidden="true"`
 - The preview `<nav>` has an `aria-label` to distinguish it from the main nav
 - Focus styles are visible on all interactive elements
-- Transitions and smooth scrolling are disabled under `prefers-reduced-motion`
 
 ---
 
