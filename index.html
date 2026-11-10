@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Responsive SaaS</title>
   </head>
   <body>
@@ -12,13 +13,27 @@
 
       <nav class="navbar">
         <a href="#" class="logo">TaskPilot</a>
-        <div class="links">
+
+        <div class="links" id="nav-links">
           <a href="#features">Features</a>
           <a href="#howitworks">How It Works</a>
           <a href="#pricing">Pricing</a>
           <a href="#">Sign in</a>
         </div>
+
         <button class="startBtn">Start Free</button>
+
+        <button
+          type="button"
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
       </nav>
 
       <!-- Hero -->
@@ -39,9 +54,9 @@
         </div>
         <div class="productPreview">
           <aside class="previewSidebar">
-            <h3>TaskPilot</h3>
+            <p class="previewBrand">TaskPilot</p>
 
-            <nav>
+            <nav aria-label="Preview navigation">
               <p>Overview</p>
               <p>My Tasks</p>
               <p>Projects</p>
@@ -50,24 +65,24 @@
 
           <div class="previewMain">
             <header class="previewHeader">
-              <h3>Good morning, Alex</h3>
+              <h2>Good morning, Alex</h2>
               <span>Monday, November 9</span>
             </header>
 
             <div class="previewStats">
               <div class="statisticCard">
-                <h3>Total Projects</h3>
-                <h1>12</h1>
+                <p class="statLabel">Total Projects</p>
+                <p class="statValue">12</p>
                 <p>from last month</p>
               </div>
               <div class="statisticCard">
-                <h3>In Progress</h3>
-                <h1>7</h1>
+                <p class="statLabel">In Progress</p>
+                <p class="statValue">7</p>
                 <p>from last month</p>
               </div>
               <div class="statisticCard">
-                <h3>Completed</h3>
-                <h1>3</h1>
+                <p class="statLabel">Completed</p>
+                <p class="statValue">3</p>
                 <p>from last month</p>
               </div>
             </div>
@@ -106,11 +121,11 @@
       <!-- Features -->
 
       <section id="features" class="features">
-        <h1>Product Features</h1>
+        <h2>Product Features</h2>
         <div class="featureCards">
           <div class="featureCard">
             <!-- Feature icon -->
-            <h2 class="featureHeading">Real-time transcription</h2>
+            <h3 class="featureHeading">Real-time transcription</h3>
             <p class="featureDescription">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
               voluptatem asperiores, corrupti fuga commodi nam!
@@ -118,7 +133,7 @@
           </div>
           <div class="featureCard">
             <!-- Feature icon -->
-            <h2 class="featureHeading">Real-time transcription</h2>
+            <h3 class="featureHeading">Real-time transcription</h3>
             <p class="featureDescription">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
               voluptatem asperiores, corrupti fuga commodi nam!
@@ -126,7 +141,7 @@
           </div>
           <div class="featureCard">
             <!-- Feature icon -->
-            <h2 class="featureHeading">Real-time transcription</h2>
+            <h3 class="featureHeading">Real-time transcription</h3>
             <p class="featureDescription">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
               voluptatem asperiores, corrupti fuga commodi nam!
@@ -138,22 +153,22 @@
       <!-- How it works -->
 
       <section id="howitworks" class="howItWorks">
-        <h1>How it works</h1>
+        <h2>How it works</h2>
         <div class="steps">
           <div class="step">
-            <h2 class="howHeading">Step 1</h2>
+            <h3 class="howHeading">Step 1</h3>
             <p class="howParagraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, in.
             </p>
           </div>
           <div class="step">
-            <h2 class="howHeading">Step 2</h2>
+            <h3 class="howHeading">Step 2</h3>
             <p class="howParagraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, in.
             </p>
           </div>
           <div class="step">
-            <h2 class="howHeading">Step 3</h2>
+            <h3 class="howHeading">Step 3</h3>
             <p class="howParagraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, in.
             </p>
@@ -164,12 +179,12 @@
       <!-- Pricing -->
 
       <section id="pricing" class="pricing">
-        <h1>Select the perfect pricing plan</h1>
+        <h2>Select the perfect pricing plan</h2>
         <div class="pricingCards">
           <div class="pricingCard">
             <h3>Starter</h3>
             <div class="price">
-              <h1>$0</h1>
+              <p class="priceValue">$0</p>
               <span>/ month</span>
             </div>
             <p>Perfect for individuals and small teams starting out.</p>
@@ -183,9 +198,9 @@
             <button>Get Started Free</button>
           </div>
           <div class="pricingCard">
-            <h3>Starter</h3>
+            <h3>Team</h3>
             <div class="price">
-              <h1>$29</h1>
+              <p class="priceValue">$29</p>
               <span>/ month</span>
             </div>
             <p>Ideal for teams needing advanced tools and insights.</p>
@@ -201,7 +216,7 @@
           <div class="pricingCard">
             <h3>Pro</h3>
             <div class="price">
-              <h1>Custom</h1>
+              <p class="priceValue">Custom</p>
             </div>
             <p>Perfect for individuals and small teams starting out.</p>
             <ul class="priceList">
@@ -220,7 +235,7 @@
 
       <section class="finalCta">
         <div class="ctaCard">
-          <h1>Ready to rise your team's productivity?</h1>
+          <h2>Ready to rise your team's productivity?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
             cupiditate architecto ad. Voluptatem culpa, ipsum delectus sint nemo
