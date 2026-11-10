@@ -61,7 +61,7 @@ Clone the repo and open the page:
 
 ```bash
 git clone https://github.com/ddelportgit/responsive-saas.git
-cd taskpilot
+cd responsive-saas
 ```
 
 Then either open `index.html` directly in a browser, or serve it locally:
