@@ -406,6 +406,12 @@ hr {
   min-width: 0;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #5205cf;
+  outline-offset: 3px;
+}
+
 /* Hamburger */
 
 .hamburger {

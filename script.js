@@ -15,8 +15,9 @@ links.addEventListener("click", (e) => {
 });
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
+  if (e.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
     toggle.setAttribute("aria-expanded", "false");
     links.classList.remove("open");
+    toggle.focus();
   }
 });
