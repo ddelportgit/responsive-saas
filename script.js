@@ -5,6 +5,10 @@ toggle.addEventListener("click", () => {
   const open = toggle.getAttribute("aria-expanded") === "true";
   toggle.setAttribute("aria-expanded", String(!open));
   links.classList.toggle("open", !open);
+
+  if (!open) {
+    links.querySelector("a")?.focus();
+  }
 });
 
 links.addEventListener("click", (e) => {
